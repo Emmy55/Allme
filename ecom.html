@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+       body {
+	font:600 16px/18px 'Open Sans',sans-serif;
+
+       }
+        
+        /* .head{
+            display: flex;
+        } */
+        .sch{
+            width: 50%;
+            height: 30px;
+        }
+        hr {
+            border: 1px solid rgba(194, 175, 175, 0.224);
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .hero{
+            width: 75%;
+            height: 60vh;
+            left: 270px;
+            padding: 30px;
+            position: relative;
+            overflow-x: hidden;
+            top: 20px;
+            border-radius: 10px;
+            background-color: grey;
+        }
+        #ul{
+            display: inline;
+            /* justify-content: space-around; */
+            position: relative;
+            left: 170px;
+            top: 40px;
+            color: white;
+        }
+        .ul{
+            display: inline;
+            position: relative;
+            left: 960px;
+            top: 43px;
+            color: white;
+            /* left: 320px; */
+        }
+        li:hover{
+            color: rgba(117, 112, 102, 0.861);
+            cursor: pointer;
+        }
+        li{
+            display:inline;
+            padding: 20px;
+        }
+        button {
+            width: 120px;
+            height: 35px;
+            border-radius: 20px;
+            border: none;
+            position: relative;
+            top: 50px;
+            font-weight: bolder;
+
+        }
+        button:hover{
+            width: 125px;
+            height: 37px;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+        }
+      
+        .hero > h1, p, button {
+            position: relative;
+            top: 30px;
+            left: 50px;
+            
+        }
+        .nex > .one > h2, .nex > .one > button {
+            position:relative;
+            top: 20px;
+            left: 20px;
+        }
+        h1{
+            font-size:40px;
+        }
+       
+        .hero_img{
+            background-color: rgb(255, 255, 255);
+            width: 386px;
+            border: 1px solid black;
+            height: 452px;
+            
+            position: absolute;
+            top: 0px;
+            left: 672px;
+            border-radius: 0px 10px 10px 0px ;
+        }
+        .nex{
+            display: flex;
+            height: 250px;
+            position: relative;
+            top: 40px;
+            margin: 0;
+            width: 100%;
+        }
+        .nex > .one {
+            width: 40%;
+            height: 250px;
+            z-index: 10;
+            background-color: rgba(242, 6, 6, 0.765);
+        }
+        .nex > .two {
+            width: 60%;
+            height: 250px;
+            background-color: black;
+        }
+        h2{
+            font-size: 30px;
+        }
+        .one_img{
+            background-color: rgb(255, 255, 255);
+            height: 248px;
+            border: 1px solid black;
+            position: relative;
+            top: -157px;
+            left: 283px;
+            width: 250px;
+        }
+        .two_img{
+            background-color: rgb(255, 255, 255);
+            height: 248px;
+            border: 1px solid black;
+            position: relative;
+            top: -157px;
+            left: 450px;
+            width: 350px;
+        }
+        .nex > .two {
+            color: white;
+        }
+        .two > button:hover {
+            border: 1px solid ;
+        }
+        .two > h2 {
+            position: relative;
+            top: 20px;
+            left: 30px;
+            width: 450px;
+        }
+        .main{
+            display: flex;
+            position: relative;
+            top: 90px;
+
+        }
+        .main > .one {
+            height: 380px;
+            border-radius: 10px;
+
+            margin: 2px;
+            width: 350px;
+            border: 1px solid black;
+            /* background-color: rgb(255, 255, 255); */
+            
+        }
+        .main > .two {
+            height: 380px;
+            border-radius: 10px;
+
+            width: 350px;
+            margin: 2px;
+            border: 1px solid black;
+            /* background-color: blue; */
+            
+        }
+        .main > .three {
+            height: 380px;
+            border-radius: 10px;
+
+            width: 350px;
+            margin: 2px;
+            border: 1px solid black;
+
+            /* background-color: blue; */
+            
+        }
+        .main > .four {
+            height: 380px;
+            border-radius: 10px;
+            width: 350px;
+            margin: 2px;
+            border: 1px solid black;
+
+            /* background-color: blue; */
+            
+        }
+        .foot {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px 10px 0px 0px;
+            background-color: rgb(0, 0, 0);
+            position: relative;
+            top: 120px;
+            
+        }
+        .head {
+            width: 101.23%;
+            height: 200px;
+            border-radius: 0px 0px 35px 35px;
+            background-color: rgb(0, 0, 0);
+            position: relative;
+            top: -20px;
+            left: -8px;
+            margin-right: 0px;
+            /* right: -10px; */
+            
+        }
+        .ul > a {
+            color: white;
+        }
+        .input {
+            position: relative;
+            top: -23px;
+            width: 450px;
+            right: -450px;
+            height: 40px;
+            border: none;
+            color:white;
+            border-radius: 0px 20px 20px 0px;
+            background-color: rgba(228, 209, 209, 0.742);
+        }
+        .input:focus{
+            outline: none;
+        }
+        #let {
+            background-color: rgba(228, 209, 209, 0.742);
+            height: 40px;
+            width: 25px;
+            border-radius: 20px 0px 0px 20px;
+            position: relative;
+            top: 17px;
+            right: -425px;
+        }
+        #input {
+            width: 90px;
+            left: 354px;
+            padding-right: 25px;
+            height: 37px;
+            position: relative;
+            top: -23px;
+            border-radius: 30px;
+            border: none;
+            background-color: aqua;
+        }
+        #input:focus{
+            outline: none;
+        }
+        #info {
+            color: white;
+            font-size: 15px;
+            /* width: 30px; */
+            /* display: inline; */
+            position: relative;
+            left: px;
+        }
+        #info:hover {
+            color: white;
+        }
+        #hr{
+            width: 19px;
+            transform: rotate(90deg);
+            color: white;
+            position: relative;
+            top: -17px;
+            right: 510px;
+            border: 1px solid white;
+        }
+        /* #sec {
+            position: relative;
+            left: 170px;
+            top: -32px;
+            overflow-y: hidden;
+
+        } */
+        #info > li:hover {
+            color: white;
+            cursor:default;
+        }
+       
+        /* @media screen (max-width:600px) {
+            
+        } */
+        
+    </style>
+</head>
+<body>
+    <div class="head">
+
+        <ul id="ul">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>Contact</li>
+            <li>About</li>
+            <li>Enquiries</li>
+        </ul>
+    <div id="info">
+
+
+            <h4>info@gmail.com</h4><hr id="hr">
+            <h4 id="sec">+234-903-098-7132</h4>
+    </div>
+        <ul class="ul">
+            <a href="mainlogin.html"><li>Login/Sign up</li></a>
+            <li>Add to Cart<i class="fa-light fa-cart-shopping"></i></li>
+        </ul><div id="let"></div>
+        <input class="input" type="search" placeholder="search items...">
+        <input id="input" type="submit" value="Search">
+        <i class="fa-light fa-magnifying-glass"></i>
+    </div>
+
+        <div class="div">
+            
+        </div>
+
+<!--Something is to be here-->
+
+<!-- 
+        <div id="sch">
+            <i class="fa-sharp fa-regular fa-magnifying-glass"></i>
+        </div>
+        <input class="sch" type="search">
+        <h5>Welcome</h5>
+        <div class="com">
+            <i class="fa-sharp fa-regular fa-comment"></i>
+
+        </div>
+        <div class="not">
+            <i class="fa-regular fa-bell"></i>
+        </div>
+        <a href="#">Login</a>
+    <hr>
+
+    <nav>
+        <div class="con">
+        <ul id="ul">
+            <li>Home</li>
+            <li>Blog</li>
+            <li>Team</li>
+            <li>About</li>
+            <li>Enquiries</li>
+        </ul>
+        <ul class="ul">
+            <li>Contact</li>
+            <li>Add to Cart<i class="fa-regular fa-cart-shopping"></i></li>
+        </ul>
+    </nav> -->
+    <div class="hero">
+        <h1>Beats Studio3 <br> <br>Wireless</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odit <br> corporis ipsam rem totam esse possimus sed cumque veniam quammag <br> ni commodi assumenda porro placeat, saepe dolorum libero numquam</p>
+
+
+        <button>Buy now</button>
+
+        <div class="hero_img"></div>
+
+
+    </div>
+</div>
+<div class="nex">
+    <div class="one">
+        <h2>Under Armour Men's <br> <br> Running Shoe</h2>
+        <br>
+        <button>Add to Cart</button>
+        <div class="one_img"></div>
+    </div>
+    <div class="two">
+        <h2>Oculus Quest 2 Virtual Reality <br> <br> Headset</h2><br>
+        <button>Add to Cart</button>
+        <div class="two_img"></div>
+
+    </div>
+</div>
+<div class="main">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+</div>
+
+
+
+<footer class="foot">
+
+</footer>
+</body>
+<script src="https://kit.fontawesome.com/9da17deac8.js" crossorigin="anonymous"></script>
+</html>
