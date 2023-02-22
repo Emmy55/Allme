@@ -28,12 +28,12 @@
             color: black;
         }
         .hero{
-            width: 75%;
-            height: 60vh;
+            width: 47%;
+            height: 59.6vh;
             left: 270px;
             padding: 30px;
             position: relative;
-            overflow-x: hidden;
+            /* overflow-x: hidden; */
             top: 20px;
             border-radius: 10px;
             background-color: grey;
@@ -96,15 +96,35 @@
         }
        
         .hero_img{
-            background-color: rgb(255, 255, 255);
-            width: 386px;
-            border: 1px solid black;
+            /* background-color: rgb(255, 255, 255); */
+            width: 57%;
+            /* border: 1px solid black; */
             height: 452px;
-            
+            animation-name: ring;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
             position: absolute;
+            background-image: url(ring1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
             top: 0px;
             left: 672px;
             border-radius: 0px 10px 10px 0px ;
+        }
+        @keyframes ring {
+        0%{
+            background-image: url(ring1.jpg);
+        }            
+        34% {
+            background-image: url(ring2.jpg);
+        }
+        68%{
+            background-image: url(ring3.jpg);
+        }
+        100%{
+            background-image: url(ring4.jpg);
+        }
         }
         .nex{
             display: flex;
@@ -117,8 +137,9 @@
         .nex > .one {
             width: 40%;
             height: 250px;
+            color: white;
             z-index: 10;
-            background-color: rgba(242, 6, 6, 0.765);
+            background-color: rgb(0, 0, 0);
         }
         .nex > .two {
             width: 60%;
@@ -129,22 +150,59 @@
             font-size: 30px;
         }
         .one_img{
-            background-color: rgb(255, 255, 255);
-            height: 248px;
-            border: 1px solid black;
+            /* background-color: rgb(255, 255, 255); */
+            height: 252px;
+            background-image: url(cap1.jpg);
+            animation-name: one;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            background-size: cover;
+            animation-duration: 20s;
             position: relative;
             top: -157px;
             left: 283px;
-            width: 250px;
+            width: 50%;
+        }
+        @keyframes one {
+        0%{
+            background-image: url(cap1.jpg);
+        }            
+        34% {
+            background-image: url(cap2.jpg);
+        }
+        68%{
+            background-image: url(cap3.jpg);
+        }
+        100%{
+            background-image: url(cap5.jpg);
+        }
         }
         .two_img{
-            background-color: rgb(255, 255, 255);
-            height: 248px;
-            border: 1px solid black;
+            height: 252px;
             position: relative;
             top: -157px;
             left: 450px;
-            width: 350px;
+            background-image: url(tap1.jpg);
+            background-size: cover;
+            animation-name: two;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            width: 44%;
+        }
+        @keyframes two {
+        0%{
+            background-image: url(tap1.jpg);
+        }            
+        34% {
+            background-image: url(tap2.jpg);
+        }
+        68%{
+            background-image: url(tap3.jpg);
+        }
+        100%{
+            background-image: url(tap4.jpg);
+        }
         }
         .nex > .two {
             color: white;
@@ -156,7 +214,7 @@
             position: relative;
             top: 20px;
             left: 30px;
-            width: 450px;
+            width: 56%;
         }
         .main{
             display: flex;
@@ -167,30 +225,106 @@
         .main > .one {
             height: 380px;
             border-radius: 10px;
-
+            background-image: url(airpod1.jpg);
+            background-size: cover;
+            animation-name: maintwo;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
             margin: 2px;
-            width: 350px;
-            border: 1px solid black;
+            width: 25%;
             /* background-color: rgb(255, 255, 255); */
             
+        }
+        @keyframes maintwo {
+
+        
+        0%{
+            background-image: url(airpod1.jpg);
+        }            
+        34% {
+            background-image: url(airpod2.jpg);
+        }
+        68%{
+            background-image: url(airpod3.jpg);
+        }
+        100%{
+            background-image: url(airpod4.jpg);
+        }
+        }
+        @keyframes mainthree {
+
+        
+        0%{
+            background-image: url(flash1.jpg);
+        }            
+        34% {
+            background-image: url(flash2.jpg);
+        }
+        68%{
+            background-image: url(flash3.jpg);
+        }
+        100%{
+            background-image: url(flash4.jpg);
+        }
+        }
+        @keyframes mainfour {
+
+        
+        0%{
+            background-image: url(watch1.jpg);
+        }            
+        34% {
+            background-image: url(watch2.jpg);
+        }
+        68%{
+            background-image: url(watch3.jpg);
+        }
+        100%{
+            background-image: url(watch4.jpg);
+        }
+        }
+        @keyframes mainfive {
+
+        
+        0%{
+            background-image: url(silverring1.jpg);
+        }            
+        34% {
+            background-image: url(silverring2.jpg);
+        }
+        68%{
+            background-image: url(silverring3.jpg);
+        }
+        100%{
+            background-image: url(silverring4.jpg);
+        }
         }
         .main > .two {
             height: 380px;
             border-radius: 10px;
-
-            width: 350px;
+            background-image: url(flash1.jpg);
+            background-size: cover;
+            animation-name: mainthree;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            width: 25%;
             margin: 2px;
-            border: 1px solid black;
             /* background-color: blue; */
             
         }
         .main > .three {
             height: 380px;
             border-radius: 10px;
-
-            width: 350px;
+            background-image: url(watch1.jpg);
+            background-size: cover;
+            animation-name: mainfour;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
+            width: 25%;
             margin: 2px;
-            border: 1px solid black;
 
             /* background-color: blue; */
             
@@ -198,9 +332,14 @@
         .main > .four {
             height: 380px;
             border-radius: 10px;
-            width: 350px;
+            width: 25%;
+            background-image: url(silverring1.jpg);
+            background-size: cover;
+            animation-name: mainfive;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-delay: 0s;
             margin: 2px;
-            border: 1px solid black;
 
             /* background-color: blue; */
             
@@ -232,7 +371,7 @@
         .input {
             position: relative;
             top: -23px;
-            width: 450px;
+            width: 35%;
             right: -450px;
             height: 40px;
             border: none;
@@ -246,16 +385,16 @@
         #let {
             background-color: rgba(228, 209, 209, 0.742);
             height: 40px;
-            width: 25px;
+            width:1.85%;
             border-radius: 20px 0px 0px 20px;
             position: relative;
             top: 17px;
             right: -425px;
         }
         #input {
-            width: 90px;
+            width: 7%;
             left: 354px;
-            padding-right: 25px;
+            /* padding-right: 25px; */
             height: 37px;
             position: relative;
             top: -23px;
@@ -314,12 +453,12 @@
             <li>About</li>
             <li>Enquiries</li>
         </ul>
-    <div id="info">
+    <ul id="info">
 
 
-            <h4>info@gmail.com</h4><hr id="hr">
-            <h4 id="sec">+234-903-098-7132</h4>
-    </div>
+            <li>info@gmail.com</li><hr id="hr">
+            <li id="sec">+234-903-098-7132</li>
+        </ul>
         <ul class="ul">
             <a href="mainlogin.html"><li>Login/Sign up</li></a>
             <li>Add to Cart<i class="fa-light fa-cart-shopping"></i></li>
@@ -379,7 +518,7 @@
 </div>
 <div class="nex">
     <div class="one">
-        <h2>Under Armour Men's <br> <br> Running Shoe</h2>
+        <h2>Under Armour<br> <br> Men's cap</h2>
         <br>
         <button>Add to Cart</button>
         <div class="one_img"></div>
